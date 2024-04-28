@@ -19,7 +19,7 @@ services:
     build: ./nginx
     volumes:
       - ./static:/usr/src/app/static
-      - ./media:/usr/src/app/media
+      - ./media:/app/media
     ports:
       - 8080:80
     depends_on:
